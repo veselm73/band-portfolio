@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gig Details — Band Portfolio</title>
+  <meta name="description" content="Concert details — photos, videos, and credits." />
+  <meta property="og:title" content="Gig Details — Band Portfolio" />
+  <meta property="og:description" content="Concert details — photos, videos, and credits." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__title"><a href="index.html">Band Portfolio</a></div>
+      <nav class="site-header__nav">
+        <a href="index.html">Gigs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <a href="index.html" class="back-link">&larr; All Gigs</a>
+
+    <div id="gig-detail" class="gig-detail">
+      <p class="loading">Loading...</p>
+    </div>
+
+    <div id="gig-error" class="error-state" style="display: none;">
+      <h1 class="error-state__title">Gig not found</h1>
+      <p class="error-state__message">We couldn't find the gig you're looking for.</p>
+      <a href="index.html">&larr; Back to all gigs</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; 2026 Band Portfolio</div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

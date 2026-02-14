@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Band Portfolio — Concerts</title>
+  <meta name="description" content="Browse our concert history — photos, videos, and stories from every gig." />
+  <meta property="og:title" content="Band Portfolio — Concerts" />
+  <meta property="og:description" content="Browse our concert history — photos, videos, and stories from every gig." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__title"><a href="index.html">Band Portfolio</a></div>
+      <nav class="site-header__nav">
+        <a href="index.html">Gigs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="filters">
+      <input
+        type="search"
+        id="filter-search"
+        class="filters__search"
+        placeholder="Search gigs..."
+        aria-label="Search gigs"
+      />
+      <select id="filter-year" class="filters__year" aria-label="Filter by year">
+        <option value="">All years</option>
+      </select>
+    </div>
+
+    <div id="gig-grid" class="gig-grid">
+      <p class="loading">Loading gigs...</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; 2026 Band Portfolio</div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
