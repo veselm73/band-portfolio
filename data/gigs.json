@@ -9,6 +9,10 @@
       "country": "Czech Republic",
       "venueUrl": "https://www.artbar.club/",
       "title": "Support for Deltawelle at ArtBar",
+      "supportFor": {
+        "name": "Deltawelle",
+        "url": "https://deltawelle.com/"
+      },
       "description": "Opening for German indie/new wave band Deltawelle at ArtBar in Brno. Our second gig and first time playing support for an international act.",
       "photos": [],
       "coverPhoto": null,
@@ -29,10 +33,10 @@
       "photos": [],
       "coverPhoto": null,
       "youtubeUrls": [
+        "https://www.youtube.com/watch?v=Im-NzLf88jQ",
         "https://www.youtube.com/watch?v=BGeAFNEX6UE",
         "https://www.youtube.com/watch?v=8insFgTFnrI",
-        "https://www.youtube.com/watch?v=VRbjlyyCrrg",
-        "https://www.youtube.com/watch?v=Im-NzLf88jQ"
+        "https://www.youtube.com/watch?v=VRbjlyyCrrg"
       ],
       "credits": {}
     }

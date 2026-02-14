@@ -163,7 +163,8 @@
         <h1 class="gig-detail__title">${escapeHtml(gig.title || gig.venue)}</h1>
         <div class="gig-detail__meta">
           <span><time datetime="${gig.date}">${formatDate(gig.date)}</time></span>
-          <span>${escapeHtml(gig.venue)}, ${escapeHtml(gig.city)}, ${escapeHtml(gig.country)}</span>
+          <span>${gig.venueUrl ? `<a href="${escapeHtml(gig.venueUrl)}" target="_blank" rel="noopener">${escapeHtml(gig.venue)}</a>` : escapeHtml(gig.venue)}, ${escapeHtml(gig.city)}, ${escapeHtml(gig.country)}</span>
+          ${gig.supportFor ? `<span>Support for <a href="${escapeHtml(gig.supportFor.url)}" target="_blank" rel="noopener">${escapeHtml(gig.supportFor.name)}</a></span>` : ""}
         </div>
       </header>
     `;
