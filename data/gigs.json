@@ -2,6 +2,21 @@
   "_docs": "Each gig object: id (unique slug), date (YYYY-MM-DD), venue, city, country, title (optional headline), description, photos (array of filenames without extension), coverPhoto (filename without ext), youtubeUrls (array), credits (object of role: name). Photos live in assets/gigs/<id>/{thumbs,1200,2000}/<filename>.webp",
   "gigs": [
     {
+      "id": "2026-02-24-u-kachnicky-brno",
+      "date": "2026-02-24",
+      "venue": "Studentský klub U Kachničky",
+      "city": "Brno",
+      "country": "Czech Republic",
+      "venueUrl": "https://su.fit.vut.cz/kachna/",
+      "title": "Live at U Kachničky",
+      "description": "",
+      "upcoming": true,
+      "photos": [],
+      "coverPhoto": null,
+      "youtubeUrls": [],
+      "credits": {}
+    },
+    {
       "id": "2026-02-11-artbar-brno",
       "date": "2026-02-11",
       "venue": "ArtBar",

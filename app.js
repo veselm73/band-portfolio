@@ -64,17 +64,18 @@
     container.innerHTML = gigs
       .map(
         (gig) => `
-      <article class="gig-card">
+      <article class="gig-card${gig.upcoming ? ' gig-card--upcoming' : ''}">
         <a href="gig.html?id=${encodeURIComponent(gig.id)}" class="gig-card__link">
-          <img
+          ${getCoverUrl(gig) ? `<img
             class="gig-card__image"
             src="${getCoverUrl(gig)}"
             alt="${escapeHtml(gig.title || gig.venue)}"
             loading="lazy"
             width="400"
             height="300"
-          />
+          />` : '<div class="gig-card__image gig-card__image--placeholder"></div>'}
           <div class="gig-card__body">
+            ${gig.upcoming ? '<span class="gig-card__badge">Upcoming</span>' : ''}
             <h2 class="gig-card__title">${escapeHtml(gig.title || gig.venue)}</h2>
             <p class="gig-card__venue">${escapeHtml(gig.venue)}, ${escapeHtml(gig.city)}</p>
             <time class="gig-card__date" datetime="${gig.date}">${formatDate(gig.date)}</time>
@@ -160,6 +161,7 @@
     // Header
     html += `
       <header class="gig-detail__header">
+        ${gig.upcoming ? '<span class="gig-detail__badge">Upcoming</span>' : ''}
         <h1 class="gig-detail__title">${escapeHtml(gig.title || gig.venue)}</h1>
         <div class="gig-detail__meta">
           <span><time datetime="${gig.date}">${formatDate(gig.date)}</time></span>
