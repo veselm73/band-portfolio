@@ -2,6 +2,22 @@
   "_docs": "Each gig object: id (unique slug), date (YYYY-MM-DD), venue, city, country, title (optional headline), description, photos (array of filenames without extension), coverPhoto (filename without ext), youtubeUrls (array), credits (object of role: name). Photos live in assets/gigs/<id>/{thumbs,1200,2000}/<filename>.webp",
   "gigs": [
     {
+      "id": "2026-02-11-artbar-brno",
+      "date": "2026-02-11",
+      "venue": "ArtBar",
+      "city": "Brno",
+      "country": "Czech Republic",
+      "venueUrl": "https://www.artbar.club/",
+      "title": "Support for Deltawelle at ArtBar",
+      "description": "Opening for German indie/new wave band Deltawelle at ArtBar in Brno. Our second gig and first time playing support for an international act.",
+      "photos": [],
+      "coverPhoto": null,
+      "youtubeUrls": [
+        "https://www.youtube.com/watch?v=b03Yk1NVzfU"
+      ],
+      "credits": {}
+    },
+    {
       "id": "2025-09-06-dziupla-club-cesky-tesin",
       "date": "2025-09-06",
       "venue": "Dziupla Club",
