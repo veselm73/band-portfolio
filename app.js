@@ -38,6 +38,18 @@
     return div.innerHTML;
   }
 
+  function getCoverUrl(gig) {
+    if (gig.coverPhoto) {
+      return `assets/gigs/${gig.id}/thumbs/${gig.coverPhoto}.webp`;
+    }
+    // Fallback: use YouTube thumbnail if available
+    if (gig.youtubeUrls && gig.youtubeUrls.length > 0) {
+      const id = extractYouTubeId(gig.youtubeUrls[0]);
+      if (id) return `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+    }
+    return "";
+  }
+
   /* ========================================
      Index Page — Concert Grid
      ======================================== */
@@ -56,7 +68,7 @@
         <a href="gig.html?id=${encodeURIComponent(gig.id)}" class="gig-card__link">
           <img
             class="gig-card__image"
-            src="assets/gigs/${gig.id}/thumbs/${gig.coverPhoto}.webp"
+            src="${getCoverUrl(gig)}"
             alt="${escapeHtml(gig.title || gig.venue)}"
             loading="lazy"
             width="400"
@@ -287,7 +299,7 @@
       return;
     }
 
-    document.title = `${gig.title || gig.venue} — Band Portfolio`;
+    document.title = `${gig.title || gig.venue} — Drying Cactus`;
     renderGigDetail(gig, detailContainer);
   }
 

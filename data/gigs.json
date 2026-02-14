@@ -2,59 +2,23 @@
   "_docs": "Each gig object: id (unique slug), date (YYYY-MM-DD), venue, city, country, title (optional headline), description, photos (array of filenames without extension), coverPhoto (filename without ext), youtubeUrls (array), credits (object of role: name). Photos live in assets/gigs/<id>/{thumbs,1200,2000}/<filename>.webp",
   "gigs": [
     {
-      "id": "2026-01-10-the-jazz-club-warsaw",
-      "date": "2026-01-10",
-      "venue": "The Jazz Club",
-      "city": "Warsaw",
-      "country": "Poland",
-      "title": "New Year Jazz Session",
-      "description": "An intimate evening of original compositions blending jazz fusion with electronic textures. The Jazz Club's legendary acoustics made this one of our most memorable performances. Three sets spanning our entire catalog, plus a few surprises.",
-      "photos": ["01", "02", "03"],
-      "coverPhoto": "cover",
+      "id": "2025-09-06-dziupla-club-cesky-tesin",
+      "date": "2025-09-06",
+      "venue": "Dziupla Club",
+      "city": "Cesky Tesin",
+      "country": "Czech Republic",
+      "venueUrl": "https://www.dziupla.cz/",
+      "title": "First Concert at Dziupla",
+      "description": "Our very first concert. Four songs, one stage, and the beginning of everything. Dziupla Club in Cesky Tesin gave us the perfect intimate setting to debut live.",
+      "photos": [],
+      "coverPhoto": null,
       "youtubeUrls": [
-        "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "https://www.youtube.com/watch?v=9bZkp7q19f0"
+        "https://www.youtube.com/watch?v=BGeAFNEX6UE",
+        "https://www.youtube.com/watch?v=8insFgTFnrI",
+        "https://www.youtube.com/watch?v=VRbjlyyCrrg",
+        "https://www.youtube.com/watch?v=Im-NzLf88jQ"
       ],
-      "credits": {
-        "Sound Engineer": "Tomasz Kowalski",
-        "Photography": "Anna Nowak",
-        "Lighting": "Piotr Zielinski"
-      }
-    },
-    {
-      "id": "2025-08-15-rock-fest-krakow",
-      "date": "2025-08-15",
-      "venue": "Rock Fest Main Stage",
-      "city": "Krakow",
-      "country": "Poland",
-      "title": "Rock Fest 2025",
-      "description": "Our biggest stage yet. 5,000 people under the open sky at Krakow's annual Rock Fest. We headlined the second day with a 90-minute set that closed with a 15-minute jam session. The energy from the crowd was absolutely electric.",
-      "photos": ["01", "02"],
-      "coverPhoto": "cover",
-      "youtubeUrls": [
-        "https://www.youtube.com/watch?v=LDU_Txk06tM"
-      ],
-      "credits": {
-        "Sound Engineer": "Marek Jankowski",
-        "Photography": "Katarzyna Wozniak",
-        "Video": "Filip Mazur"
-      }
-    },
-    {
-      "id": "2025-03-22-underground-stage-berlin",
-      "date": "2025-03-22",
-      "venue": "Underground Stage",
-      "city": "Berlin",
-      "country": "Germany",
-      "title": "Berlin Underground Night",
-      "description": "A raw, stripped-down set in one of Berlin's most iconic underground venues. No frills, just the music echoing off concrete walls. We debuted three new tracks that night and the crowd response told us we were onto something special.",
-      "photos": ["01"],
-      "coverPhoto": "cover",
-      "youtubeUrls": [],
-      "credits": {
-        "Sound Engineer": "Klaus Weber",
-        "Photography": "Lena Schmidt"
-      }
+      "credits": {}
     }
   ]
 }
