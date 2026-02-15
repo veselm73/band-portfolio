@@ -2,14 +2,14 @@
    Custom Properties
    ======================================== */
 :root {
-  --bg: #0e0e12;
-  --bg-surface: #16161d;
-  --bg-elevated: #1e1e28;
-  --text: #e8e6e3;
-  --text-muted: #9a9a9a;
-  --accent: #c084fc;
-  --accent-hover: #d8b4fe;
-  --border: #2a2a36;
+  --bg: #0b0f14;
+  --bg-surface: #121820;
+  --bg-elevated: #1a2230;
+  --text: #e4ddd4;
+  --text-muted: #8b9bb4;
+  --accent: #d4a843;
+  --accent-hover: #e8c060;
+  --border: #1e2a3a;
   --radius: 8px;
   --transition: 0.2s ease;
   --max-width: 1200px;
@@ -96,14 +96,14 @@ select:focus-visible {
 }
 
 .site-header__title a {
-  color: var(--text);
+  color: var(--accent);
   display: flex;
   align-items: center;
   gap: 0.625rem;
 }
 
 .site-header__title a:hover {
-  color: var(--accent);
+  color: var(--accent-hover);
 }
 
 .site-header__logo {
