@@ -89,8 +89,9 @@ select:focus-visible {
 }
 
 .site-header__title {
+  font-family: "Bungee", cursive;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -100,10 +101,12 @@ select:focus-visible {
   display: flex;
   align-items: center;
   gap: 0.625rem;
+  text-shadow: 2px 2px 0 #a07828;
 }
 
 .site-header__title a:hover {
   color: var(--accent-hover);
+  text-shadow: 2px 2px 0 #b08830;
 }
 
 .site-header__logo {
